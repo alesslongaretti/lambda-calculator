@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 
-// import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+
 import Display from "./components/DisplayComponents/Display";
-// import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
-// import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
+
+
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";

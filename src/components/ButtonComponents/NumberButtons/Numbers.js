@@ -14,16 +14,17 @@ import { numbers } from '../../../data'
 export default function Numbers() { 
 
   const [numberState, setNumberState] = useState(numbers);
-  const [selectedButton, setSelectedButton] = useState(numberState);
+  // const [selectedButton, setSelectedButton] = useState(numberState);
 
   // STEP 2 - add the imported data to state
   return (
-    <div>
-      {numberState.map((a ) => {
+    <div class="numbers-container">
+      {numberState.map((button, key) => {
         return (
           <NumberButton
-          key={a}
-          setSelectedButton={setSelectedButton}
+          key={key}
+          button = {button}
+          setNumberState ={setNumberState}
           />
         );
 

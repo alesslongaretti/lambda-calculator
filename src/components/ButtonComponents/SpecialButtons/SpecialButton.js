@@ -1,11 +1,11 @@
 import React from "react";
 
-const SpecialButton = pro => {
+const SpecialButton = props => {
   return (
     <button
-    className= "special_button"
-    onClick = { () => pro.setSpecialButton(pro.button)}
-    > 
+    className= "buttons" id="specials"
+    onClick = { () => props.setSpecialState(props.button)}
+    > {`${props.button}`}
     </button>
    
   );

@@ -9,18 +9,18 @@ import OperatorButton from "./OperatorButton";
 export default function Operators ()  {
   // STEP 2 - add the imported data to state
   const [operatorState, setOperatorState] = useState(operators);
-  const [operatorButton, setOperatorButton] = useState(operatorState);
+  // const [operatorButton, setOperatorButton] = useState(operatorState);
 
 
   return (
-    <div>
+    <div class="operators-container">
       {
-        operatorState.map((b,c) => {
+        operatorState.map((button,key) => {
           return (
-            <OperatorButton
-            button={b}
-            hi={c}
-            setOperatorButton={setOperatorButton}
+            <OperatorButton 
+            key={key}
+            button={button}
+            setOperatorState={setOperatorState}
             />
 
           );

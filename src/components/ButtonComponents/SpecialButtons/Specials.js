@@ -8,18 +8,19 @@ import SpecialButton from "./SpecialButton";
 
 export default function Specials () {
   const [specialState, setSpecialState] = useState(specials);
-  const [specialButton, setSpecialButton] = useState(specialState);
+  // const [specialButton, setSpecialButton] = useState(specialState);
 
   // STEP 2 - add the imported data to state
 
   return (
-    <div>
-      {specialState.map((d) => {
+    <div class ="specials-container">
+      {specialState.map((button, key) => {
 
         return(
         <SpecialButton
-        numbe={d}
-        setSpecialButton= {setSpecialButton}
+        key={key}
+        button= {button}
+        setSpecialState= {setSpecialState}
         />
       );
        })}
@@ -27,3 +28,4 @@ export default function Specials () {
 
   );
 };
+
