@@ -73,3 +73,12 @@
   .specials-container {
       margin-left: 12px;
   }
+
+  #numbers:nth-last-child(1){
+      margin-left: 24px
+  }
+
+  #numbers:nth-child(10) {
+      width: 215px;
+      border-radius: 50px;
+  }

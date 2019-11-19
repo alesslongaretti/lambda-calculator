@@ -13,14 +13,14 @@ export default function Specials () {
   // STEP 2 - add the imported data to state
 
   return (
-    <div class ="specials-container">
+    <div className ="specials-container">
       {specialState.map((button, key) => {
 
         return(
         <SpecialButton
         key={key}
         button= {button}
-        setSpecialState= {setSpecialState}
+        setState= {setSpecialState}
         />
       );
        })}

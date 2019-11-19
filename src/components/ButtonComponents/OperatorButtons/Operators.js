@@ -13,7 +13,8 @@ export default function Operators ()  {
 
 
   return (
-    <div class="operators-container">
+    
+    <div className="operators-container">
       {
         operatorState.map((button,key) => {
           return (
