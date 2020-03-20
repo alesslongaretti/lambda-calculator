@@ -1,9 +1,21 @@
 import React from "react";
 
-const NumberButton = () => {
+// import { tsPropertySignature } from "@babel/types";
+
+const NumberButton = props => {
+  let button;
+    button = <button 
+    className="buttons" id="numbers"
+    onClick={() => props.setState(props.number)}
+    >{props.number}
+    </button>;
+
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+    {button}
     </>
   );
+
 };
+
+export default NumberButton;
